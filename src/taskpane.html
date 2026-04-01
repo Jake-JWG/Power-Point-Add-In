@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide Status Manager</title>
+  <link rel="stylesheet" href="./taskpane.css" />
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Slide Status Manager</h1>
+    <p class="hint">Choose a status for the selected slide, or apply to every slide.</p>
+
+    <section>
+      <h2>Current slide</h2>
+      <div class="button-grid" id="single-slide-actions"></div>
+    </section>
+
+    <section>
+      <h2>All slides</h2>
+      <div class="button-grid" id="all-slide-actions"></div>
+    </section>
+
+    <div id="message" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="./taskpane.js"></script>
+</body>
+</html>
